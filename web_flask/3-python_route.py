@@ -21,9 +21,9 @@ def cisfun(text):
     return 'C %s' % text.replace("_", " ")
 
 
-
+@app.route("/python", strict_slashes=False)
 @app.route("/python/<text>", strict_slashes=False)
-def pythoniscool(text):
+def pythoniscool(text="is cool"):
     return 'Python %s' % text.replace("_", " ")
 
 if __name__ == '__main__':
